@@ -1,6 +1,6 @@
-/// <reference path="jquery.d.ts" />
+/// <reference path="references/jquery.d.ts" />
 
-class App {
+class Test1 {
 
     user:Person;
     square1:DraggableSquare;

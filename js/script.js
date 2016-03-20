@@ -63,18 +63,18 @@ var DraggableSquare = (function (_super) {
     };
     return DraggableSquare;
 })(Draggable);
-/// <reference path="jquery.d.ts" />
-var App = (function () {
-    function App(firstname, lastname) {
+/// <reference path="references/jquery.d.ts" />
+var Test1 = (function () {
+    function Test1(firstname, lastname) {
         this.user = { firstname: firstname, lastname: lastname };
         this.square1 = new DraggableSquare("#square1");
         this.square2 = new DraggableSquare("#square2");
     }
-    App.prototype.display = function () {
+    Test1.prototype.display = function () {
         var message = greeter(this.user);
         jQuery("#console").text(message);
     };
-    return App;
+    return Test1;
 })();
 function greeter(person) {
     return "Hello, " + person.firstname + " " + person.lastname;

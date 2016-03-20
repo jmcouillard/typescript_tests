@@ -1,4 +1,4 @@
-/// <reference path="../ts/jquery.d.ts" />
+/// <reference path="../ts/references/jquery.d.ts" />
 declare class Draggable {
     x: number;
     y: number;
@@ -19,7 +19,7 @@ declare class DraggableSquare extends Draggable {
     constructor(selector: string);
     isOver(x: number, y: number): boolean;
 }
-declare class App {
+declare class Test1 {
     user: Person;
     square1: DraggableSquare;
     square2: DraggableSquare;
