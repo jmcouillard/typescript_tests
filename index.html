@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+	<title>TypeScript Tests</title>
+	<script type="application/javascript" src="js/libs/jquery/jquery-1.11.2.min.js"></script>
+	<script type="application/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" href="css/styles.css"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="HandheldFriendly" content="true"/>
+	<meta name="robots" content="noindex"/>
+	<script type="text/javascript">
+
+		// Trigger app
+		var ready = function () {
+			window.app = new App("Jean-Maxime", "Couillard");
+			window.app.display();
+		};
+
+		window.addEventListener('load', ready, false);
+	</script>
+
+</head>
+<body class="ts">
+
+<div id="console"></div>
+
+<div class="square" id="square1"></div>
+<div class="square" id="square2"></div>
+
+</body>
+</html>

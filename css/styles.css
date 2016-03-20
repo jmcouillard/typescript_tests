@@ -1,0 +1,38 @@
+html,
+body {
+  background-color: #000000;
+  font-size: 0;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  outline: none;
+}
+p {
+  white-space: normal;
+}
+#console {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #FFF;
+  font-size: 14px;
+  margin: 30px;
+}
+.square {
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+}
+#square1 {
+  background-color: red;
+  top: 60px;
+  left: 40px;
+}
+#square2 {
+  background-color: green;
+  top: 120px;
+  left: 220px;
+}
