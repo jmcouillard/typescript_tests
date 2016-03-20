@@ -1,24 +1,8 @@
-/// <reference path="jquery.d.ts" />
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var App = (function () {
-    function App(firstname, lastname) {
-        this.user = { firstname: firstname, lastname: lastname };
-        this.square1 = new DraggableSquare("#square1");
-        this.square2 = new DraggableSquare("#square2");
-    }
-    App.prototype.display = function () {
-        var message = greeter(this.user);
-        jQuery("#console").text(message);
-    };
-    return App;
-})();
-function greeter(person) {
-    return "Hello, " + person.firstname + " " + person.lastname;
-}
 var Draggable = (function () {
     function Draggable(selector) {
         this.x = 0;
@@ -79,4 +63,20 @@ var DraggableSquare = (function (_super) {
     };
     return DraggableSquare;
 })(Draggable);
+/// <reference path="jquery.d.ts" />
+var App = (function () {
+    function App(firstname, lastname) {
+        this.user = { firstname: firstname, lastname: lastname };
+        this.square1 = new DraggableSquare("#square1");
+        this.square2 = new DraggableSquare("#square2");
+    }
+    App.prototype.display = function () {
+        var message = greeter(this.user);
+        jQuery("#console").text(message);
+    };
+    return App;
+})();
+function greeter(person) {
+    return "Hello, " + person.firstname + " " + person.lastname;
+}
 //# sourceMappingURL=script.js.map

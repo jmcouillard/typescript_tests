@@ -1,2 +1,2 @@
-# typescript_tests
+# TypeScript tests
 Experimentations with TypeScript
